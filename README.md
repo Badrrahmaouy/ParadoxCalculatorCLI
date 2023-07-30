@@ -1,6 +1,7 @@
 # ParadoxCalculatorCLI
 Part 1 of Paradox Engineering test, creates a command line interface where user is prompt to write an aritmethic operation and will show the result.
-Project developped with TDD method, using JUnit for testing functions and components.
+
+Project developped with TDD method, using using Maven as package mananger and JUnit for testing functions and components.
 
 # Step for installation
 1. Git clone the repo 
@@ -10,4 +11,4 @@ Project developped with TDD method, using JUnit for testing functions and compon
 
 Hope everything works fine
 
-Developped and tested on MacBook Pro M1.
+Developped and tested on MacBook Pro M1 with MacOS OS.
