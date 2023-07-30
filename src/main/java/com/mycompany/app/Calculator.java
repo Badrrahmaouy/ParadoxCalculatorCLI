@@ -1,8 +1,7 @@
 package com.mycompany.app;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
 import java.util.NoSuchElementException;
+import java.util.Stack;
 
 public class Calculator {
     String finalResult;
@@ -20,9 +19,9 @@ public class Calculator {
         expression = expression.replaceAll("\\s+", "");
 
         // Use a stack to store numbers and intermediate results
-        Deque<Double> numberStack = new ArrayDeque<>();
+        Stack<Double> numberStack = new Stack<>();
         // Use a stack to store operators
-        Deque<Character> operatorStack = new ArrayDeque<>();
+        Stack<Character> operatorStack = new Stack<>();
 
         for (int i = 0; i < expression.length(); i++) {
             char currentChar = expression.charAt(i);
@@ -72,7 +71,7 @@ public class Calculator {
         return finalResult;
     }
 
-    private void evaluateExpression(Deque<Double> numberStack, Deque<Character> operatorStack) {
+    private void evaluateExpression(Stack<Double> numberStack, Stack<Character> operatorStack) {
         // Pop the operator from the operator stack
         char operator = operatorStack.pop();
         // Pop the two operands from the number stack
